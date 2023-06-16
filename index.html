@@ -22,7 +22,7 @@
         <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
       </header>
 
-      <form action="">
+      <form id="mentorship-form">
         <fieldset>
           <legend>Informações Pessoais</legend>
 
@@ -50,7 +50,7 @@
               <label for="password"
                 >Senha <span>(mínimo de 6 caracteres)</span>
               </label>
-              <input type="password" id="password" />
+              <input type="password" id="password" minlength="6" />
             </div>
           </div>
         </fieldset>
@@ -112,7 +112,7 @@
       </form>
 
       <footer>
-        <button>
+        <button type="submit" form="mentorship-form">
             salvar
         </button>
       </footer>
